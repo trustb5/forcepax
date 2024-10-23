@@ -1,0 +1,393 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.accueil{
+    background-image: url(../asset/images/Back1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-color: #00000096;
+    height: 100vh;
+    padding: 40px 0;
+}
+
+/* Style pour la barre de navigation */
+.accueil .container .navbar{
+    background-color: #7d990031;
+    padding: 3px 10px;
+    border-radius: 10px;
+}
+.accueil .container .navbar .logo img{
+    width: 90px;
+    border-radius: 50%;
+}
+
+.accueil .container .navbar ul li a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.accueil .container .navbar .btn{
+    background-color: #7d9900;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 40px;
+}
+
+/* Menu burger*/
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+  
+.burger-menu .line {
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+  
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+  
+.nav-links li {
+    margin: 0 10px;
+}
+  
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+  
+@media (max-width: 768px) {
+    .burger-menu {
+      display: flex;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #7d9900;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .nav-links li {
+      text-align: center;
+      margin: 10px 0;
+    }
+}
+
+/* Style de l'aperçu */
+.accueil .container .apercu{
+    margin: 100px;
+    position: relative;
+}
+
+.accueil .container .apercu h1{
+    font-size: 100px;
+    text-align: center;
+    color: #fff;
+    font-weight: 900;
+}
+
+.accueil .container .apercu h1 span{
+    color: #7d9900;
+}
+
+.accueil .container .apercu .textcontent{
+    border: 5px solid #fff;
+    padding: 80px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.accueil .container .apercu div p{
+    font-size: 35px;
+    color: #fff;
+}
+
+.accueil .container .apercu a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #7d9900;
+    position: absolute;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 18px;
+    margin-top: -25px;
+}
+
+/* Style de la section About */
+.about{
+    background-color: #7d990042;
+}
+
+.about .container .content{
+    padding: 40px;
+    text-align: center;
+}
+
+.about .container .content h1{
+    font-size: 35px;
+    color: #7d9900;
+}
+
+.about .container .content p{
+    color: #000;
+}
+
+.about .container .content a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #7d9900;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+/* Style de la section Mission */
+.mission{
+    background-color: #7d9900;
+}
+
+.mission .container .content{
+    padding: 40px;
+    text-align: center;
+}
+
+.mission .container .content h1{
+    font-size: 35px;
+    color: #f6ffcd;
+}
+
+.mission .container .content p{
+    color: #fff;
+    text-align: left;
+}
+
+.mission .container .content a{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #ffcc00;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 20px;
+    box-shadow: 0 0 8px #5c7000;
+}
+
+/* Style de la section Projets */
+.projets .container .content{
+    padding: 40px;
+    text-align: center;
+}
+
+.projets .container .content h1{
+    font-size: 35px;
+    color: #000;
+}
+
+.projets .container .content a{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #ffcc00;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 15px;
+    box-shadow: 0 0 5px #5c7000;
+}
+
+/* Style de la section Réalisations */
+.real{
+    background-color: #f6ffcd;
+}
+
+.real .container .content{
+    padding: 40px;
+    text-align: center;
+}
+
+.real .container .content h1{
+    font-size: 35px;
+    color: #7d9900;
+}
+
+.real .container .content a{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #ffcc00;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 15px;
+    box-shadow: 0 0 5px #5c7000;
+}
+
+.contact{
+    padding: 40px;
+    background-image: url(images/Back1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #5b7000e1;
+}
+
+.contact .container .form-box{
+    background-color: #7d9900;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #000000;
+    text-align: center;
+}
+
+.contact .container .form-box h2{
+    color: #fff;
+}
+.contact .container .form-box .input-box{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    border-bottom: 2px solid #5c7000;
+    margin: 30px 0;
+}
+
+.contact .container .form-box p{
+    color: #fff;
+}
+
+.contact .container .input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.contact .container .input-box input:focus~label,
+.contact .container .input-box input:valid~label{
+    top: -5px;
+}
+
+.contact .container .input-box textarea:focus~label,
+.contact .container .input-box textarea:valid~label{
+    top: -5px;
+    border: none;
+}
+
+.contact .container .input-box input,
+.contact .container .input-box textarea{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #000;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.contact .container .btn{
+    width: 100%;
+    background: #ffcc00;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    box-shadow: 0 0 10px #5c7000;
+}
+
+.contact .container .coordonnees{
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #445300;
+}
+
+.contact .container .coordonnees h2{
+    color: #7d9900;
+    text-align: center;
+    font-size: 18px;
+}
+
+.contact .container .coordonnees div p i{
+    color: #ffcc00;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.contact .container .coordonnees div p{
+    color: #7d9900;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+}
+
+footer{
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+footer .container .newsletter{
+    border: 2px solid #4b4b4b;
+    border-radius: 60px;
+    padding: 10px 25px;
+}
+
+footer .container .newsletter img{
+    width: 90px;
+    border-radius: 50%;
+}
+
+footer .container .newsletter input{
+    padding: 8px 30px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border: none;
+}
+
+footer .container .newsletter button{
+    border: none;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding: 8px 10px;
+    background-color: #ffcc00;
+    color: #fff;
+}
+
+footer .container .foot h4{
+    font-size: 25px;
+    color: #ffcc00;
+}
+
+footer .container .foot p i{
+    color: #ffcc00;
+    font-size: 20px;
+}
+
+footer .container .text{
+    text-align: center;
+}
