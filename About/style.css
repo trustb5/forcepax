@@ -114,24 +114,6 @@ body{
     text-align: center;
 }
 
-/* Nav page */
-.navpage{
-    background-color: #7d9900;
-    border-radius: 10px;
-    position: sticky;
-    margin-top: -23px;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.navpage a{
-    font-size: 35px;
-    text-decoration: none;
-    color: #fff;
-    margin: 0 15px;
-}
-
 .corp{
     background-color: #7d990023;
     padding: 40px 0;
@@ -192,6 +174,44 @@ body{
 }
 
 .agroPastoral .text p{
+    text-align: left;
+}
+
+.rural{
+    background-color: #7d990023;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.rural h1{
+    color: #7d9900;
+}
+
+.rural .text{
+    box-shadow: 0 0 10px #969696;
+    padding: 20px;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.rural .text p,
+.rural .text li{
+    text-align: left;
+}
+
+.education{
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.education h1,
+.education h5{
+    color: #b9932b;
+}
+
+.education .content p,
+.education .content li{
     text-align: left;
 }
 
