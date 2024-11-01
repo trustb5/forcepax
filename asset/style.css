@@ -1,7 +1,9 @@
-body{
+body,
+html{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    max-width: 100vw;
 }
 
 .accueil{
@@ -12,6 +14,7 @@ body{
     background-blend-mode: multiply;
     background-color: #00000096;
     height: 100vh;
+    width: 100%;
     padding: 40px 0;
 }
 
@@ -58,6 +61,7 @@ body{
 .nav-links {
     list-style: none;
     display: flex;
+    z-index: 9999;
 }
   
 .nav-links li {
@@ -67,31 +71,6 @@ body{
 .nav-links a {
     color: #fff;
     text-decoration: none;
-}
-  
-@media (max-width: 768px) {
-    .burger-menu {
-      display: flex;
-    }
-  
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      background-color: #7d9900;
-    }
-  
-    .nav-links.active {
-      display: flex;
-    }
-  
-    .nav-links li {
-      text-align: center;
-      margin: 10px 0;
-    }
 }
 
 /* Style de l'aperçu */
@@ -193,8 +172,11 @@ body{
 }
 
 /* Style de la section Projets */
+.projets{
+    background-color: #7d990015;
+}
 .projets .container .content{
-    padding: 40px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -206,11 +188,40 @@ body{
 .projets .container .content a{
     text-decoration: none;
     color: #ffffff;
-    background-color: #ffcc00;
-    padding: 5px 10px;
-    border-radius: 3px;
+    background-color: #ff9100;
+    padding: 7px 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
     font-size: 15px;
-    box-shadow: 0 0 5px #5c7000;
+    box-shadow: 0 0 2px #5c7000;
+}
+
+.projets .container .pbox{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 1px #cacaca;
+}
+
+.projets .container .pbox .icon p{
+    background-color: #ff9100;
+    color: #fff;
+    font-size: 18px;
+    padding: 6px 10px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    box-shadow: 0 0 2px #646464;
+}
+
+.projets .container .pbox h5{
+    color: #7d9900;   
+}
+
+.projets .container .pbox p{
+    text-align: left;
+    color: #000000;
 }
 
 /* Style de la section Réalisations */
@@ -219,7 +230,7 @@ body{
 }
 
 .real .container .content{
-    padding: 40px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -228,16 +239,54 @@ body{
     color: #7d9900;
 }
 
-.real .container .content a{
+.real .container .content button{
     text-decoration: none;
     color: #ffffff;
     background-color: #ffcc00;
     padding: 5px 10px;
+    border: none;
     border-radius: 3px;
     font-size: 15px;
     box-shadow: 0 0 5px #5c7000;
 }
 
+.real .container .content .rbox{
+    background-color: #7d9900;
+    padding: 15px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    box-shadow: 0 0 6px #636363;
+}
+
+.real .container .content .rbox img{
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    box-shadow: 0 0 3px #8d8d8d;
+}
+
+.real .container .content .rbox h5{
+    font-size: 19px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.real .container .content .rbox p{
+    text-align: left;
+    color: #dfdfdf;
+}
+
+.real .illustre{
+    width: 100%;
+    max-width: 100vw;
+    padding: 50px;
+}
+
+.real .illustre img{
+    border: 15px solid #7d9900;
+    border-radius: 10px;
+}
+
+ /* Style pour le formulaire de contact */
 .contact{
     padding: 40px;
     background-image: url(images/Back1.jpg);
@@ -319,32 +368,6 @@ body{
     box-shadow: 0 0 10px #5c7000;
 }
 
-.contact .container .coordonnees{
-    background-color: #fff;
-    padding: 10px 20px;
-    border-radius: 15px;
-    box-shadow: 0 0 10px #445300;
-}
-
-.contact .container .coordonnees h2{
-    color: #7d9900;
-    text-align: center;
-    font-size: 18px;
-}
-
-.contact .container .coordonnees div p i{
-    color: #ffcc00;
-    font-size: 18px;
-    margin-bottom: 0;
-}
-
-.contact .container .coordonnees div p{
-    color: #7d9900;
-    font-size: 12px;
-    font-weight: 600;
-    text-align: left;
-}
-
 footer{
     background-color: #333;
     color: #fff;
@@ -366,6 +389,7 @@ footer .container .newsletter input{
     padding: 8px 30px;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
+    outline: none;
     border: none;
 }
 
@@ -390,4 +414,184 @@ footer .container .foot p i{
 
 footer .container .text{
     text-align: center;
+}
+
+.wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .5s ease ,height .2s ease;
+    z-index: 9999;
+}
+
+.wrapper .container .content{
+    padding: 100px;
+}
+
+.wrapper button{
+    border: none;
+    background-color: #7d9900;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+}
+
+.formavis{
+    background-color: #fff;
+    padding: 50px;
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 0 0 8px #2c2c2c;
+}
+
+.formavis h3{
+    color: #7d9900;
+    text-align: center;
+}
+
+.formavis .inputbox{
+    border-bottom: 1px solid #7d9900;
+    margin-bottom: 20px;
+}
+
+.formavis .inputbox input,
+.formavis .inputbox textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.formavis .inputbox label{
+    text-align: left;
+    color: #000;
+    font-weight: 600;
+}
+
+.formavis button{
+    background-color: #7d9900;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.avisbox{
+    background-color: #7d9900;
+    padding: 50px;
+    height: 70vh;
+    width: 70%;
+    overflow-y: scroll;
+    border-radius: 20px;
+    box-shadow: 0 0 8px #2c2c2c;
+}
+
+.avisbox h4{
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+}
+
+.avisbox .avis{
+    background-color: #ffffffd7;
+    margin-bottom: 10px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 15px;
+}
+
+.avisbox .avis p i{
+    font-size: 30px;
+}
+
+.avisbox .avis div h6{
+    font-size: 14px;
+}
+
+.avisbox .avis div .comment p{
+    font-size: 10px;
+}
+
+@media (max-width: 768px) {
+    .burger-menu {
+      display: flex;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #7d9900;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .nav-links li {
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    .accueil .container .navbar .logo img{
+        width: 60px;
+    }
+
+    .accueil .container .navbar .btn{
+        font-size: 10px;
+    }
+
+    .accueil .container .apercu{
+        margin: 50px;
+    }
+
+    .accueil .container .apercu h1{
+        font-size: 50px;
+    }
+
+    .accueil .container .apercu .textcontent{
+        padding: 20px;
+    }
+    
+    .accueil .container .apercu div p{
+        font-size: 25px;
+        color: #fff;
+    }
+
+    .wrapper .container .content{
+        padding: 10px;
+    }
+
+    .formavis{
+        width: 100%;
+    }
+
+    .avisbox{
+        display: none;
+    }
+
+    footer .container .newsletter img{
+        width: 60px;
+    }
+    
+    footer .container .newsletter input{
+        padding: 3px 8px;
+    }
+
+    footer .container .newsletter button{
+        padding: 3px 10px;
+    }
 }

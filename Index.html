@@ -9,6 +9,149 @@
     <title>FORSPAX Web Site</title>
 </head>
 <body>
+    <div class="wrapper" id="avis" style="display: none; padding: 20px;">
+        <div class="d-flex justify-content-end">
+            <button id="closeavis">Fermer</button>
+        </div>
+        <div class="container">
+            <div class="content">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="d-flex justify-content-center">
+                            <div class="formavis">
+                                <h3>Soumettez votre avis</h3>
+                                <div class="inputbox">
+                                    <label for="name">Prénom</label>
+                                    <input type="text" name="name" id="name" required>
+                                </div>
+                                <div class="inputbox">
+                                    <label for="email">Adresse mail</label>
+                                    <input type="email" name="email" id="email" required>
+                                </div>
+                                <div class="inputbox">
+                                    <label for="avis">Avis</label>
+                                    <textarea name="avis" id="avis"></textarea>
+                                </div>
+                                <button type="submit">Envoyer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex justify-content-center">
+                            <div class="avisbox">
+                                <h4>Les récents avis</h4>
+                                <div class="avis">
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <div class="d-flex justify-content-center">
+                                                <p><i class="bi bi-person-circle"></i></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-9">
+                                            <div class="d-flex justify-content-center">
+                                                <div>
+                                                    <h6>Précieux Mwanza</h6>
+                                                    <div class="comment">
+                                                        <p>
+                                                            J'ai été très bénéficier de cette réalisation de ForsPax
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="avis">
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <div class="d-flex justify-content-center">
+                                                <p><i class="bi bi-person-circle"></i></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-9">
+                                            <div class="d-flex justify-content-center">
+                                                <div>
+                                                    <h6>Précieux Mwanza</h6>
+                                                    <div class="comment">
+                                                        <p>
+                                                            J'ai été très bénéficier de cette réalisation de ForsPax
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="avis">
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <div class="d-flex justify-content-center">
+                                                <p><i class="bi bi-person-circle"></i></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-9">
+                                            <div class="d-flex justify-content-center">
+                                                <div>
+                                                    <h6>Précieux Mwanza</h6>
+                                                    <div class="comment">
+                                                        <p>
+                                                            J'ai été très bénéficier de cette réalisation de ForsPax
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="avis">
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <div class="d-flex justify-content-center">
+                                                <p><i class="bi bi-person-circle"></i></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-9">
+                                            <div class="d-flex justify-content-center">
+                                                <div>
+                                                    <h6>Précieux Mwanza</h6>
+                                                    <div class="comment">
+                                                        <p>
+                                                            J'ai été très bénéficier de cette réalisation de ForsPax
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="avis">
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <div class="d-flex justify-content-center">
+                                                <p><i class="bi bi-person-circle"></i></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-9">
+                                            <div class="d-flex justify-content-center">
+                                                <div>
+                                                    <h6>Précieux Mwanza</h6>
+                                                    <div class="comment">
+                                                        <p>
+                                                            J'ai été très bénéficier de cette réalisation de ForsPax
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <section class="accueil">
         <div class="container">
             <header>
@@ -18,15 +161,14 @@
                         <div class="line"></div>
                         <div class="line"></div>
                     </div>
-                    <a href="Index.html" class="logo"><img src="asset/images/Logos/FORspa (1).png" alt="Logo FORSPAX"></a>
+                    <a href="index.html" class="logo"><img src="asset/images/Logos/FORspa (1).png" alt="Logo FORSPAX"></a>
                     <ul class="nav-links" id="nav-links">
-                        <li><a href="Index.html">Accueil</a></li>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="#projets">Domaines d'intervention</a></li>
+                        <li><a href="#real">Réalisations</a></li>
                         <li><a href="#about">A propos</a></li>
-                        <li><a href="#mission">Missions</a></li>
-                        <li><a href="#projets">Projets</a></li>
-                        <li><a href="#">Réalisations</a></li>
                     </ul>
-                    <a href="#" class="btn" id="connection">Contact</a>
+                    <a href="#contact" class="btn" id="connection">Contact</a>
                 </div>
             </header>
             <div class="d-flex justify-content-center">
@@ -36,7 +178,7 @@
                         <p>FORUM INTERCOMMUNAUTAIRE <br> POUR LE SOCIAL ET LA PAIX</p>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <a href="#">Découvez FORSPAX</a>
+                        <a href="About/about.html">Découvez FORSPAX</a>
                     </div>
                 </div>
             </div>
@@ -46,28 +188,21 @@
         <div class="container">
             <div class="content">
                 <h1>Qui sommes nous ?</h1>
-                <p>
+                <p style="text-align: left;">
                     le <strong>Réseau FORSPAX</strong> est l'un des  résultats  historiques  de différentes synergies  et consortiums  
                     ayant  travaillé dans les domaines de: promotion de la paix, lutte contre les VBG et le VIH-SIDA, 
                     plaidoyer, monitoring, promotion de la bonne gouvernance, protection  des groupes  vulnérables, 
                     réforme législative  par  élaboration des Edits  et  plaidoyer pour  leur vote   et  leur  
                     promulgation  par les autorités gouvernementales.
                 </p>
-                <a href="About/about.html">En savoir plus</a>
-            </div>
-        </div>
-    </section>
-    <section class="mission" id="mission">
-        <div class="container">
-            <div class="content">
                 <h1>Vision et Mandat</h1>
-                <p>
+                <p style="text-align: left;">
                     La VISION du <strong>Réseau FORSPAX</strong> est  de demeurer  une interface crédible et fédératrice des dynamiques  
                     communautaires  par  lesquelles  la confiance, la citoyenneté responsable, la paix, la prospérité des 
                     populations locales, et la redevabilité des gouvernants génèrent un environnement protecteur et propice 
                     à l'épanouissement de chaque  enfant, chaque femme  et  de  chaque  famille.
                 </p>
-                <p>
+                <p style="text-align: left;">
                     La Mission du <strong>Réseau FORSPAX</strong> est de contribuer à l'amélioration  du Social, à la promotion de la paix 
                     et  à la protection des droits humains par les actions de renforcement des capacités techniques et 
                     institutionnelles des ASBL et des communautés locales, par la promotion  des  capacités  de résilience  
@@ -75,117 +210,149 @@
                     pour qu'elles  améliorent  les conditions  de vie dans la société congolaise   en  général    et  celles  des 
                     zones enclavées  en particulier.
                 </p>
-                <a href="#">En savoir plus</a>
+                <a href="About/about.html">En savoir plus</a>
             </div>
         </div>
     </section>
     <section class="projets" id="projets">
         <div class="container">
             <div class="content">
-                <h1>Nos projets</h1>
+                <h1>Nos domaines d'interventions</h1>
                 <div class="row">
-                    <div class="col-md-6 col-lg-4 p-1 mb-3 shadow bg-light">
-                        <div class="row align-items-center m-3">
-                            <div class=" text-center">
-                                <p style="font-size: 60px;"><i class="bi bi-people-fill"></i></p>
-                            </div>
-                            <div class="col-lg-auto">
-                                <h5 style="text-align: center;">Bonne gouvernance</h5>
-                                <p>
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore est 
-                                    consequuntur facilis tenetur alias quidem quis nulla, aliquam dolorem.
-                                </p>
-                                <a href="#">En savoir plus</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 p-1 mb-3 shadow bg-light">
-                        <div class="row align-items-center m-3">
-                            <div class="text-center">
-                                <p style="font-size: 60px;"><i class="bi bi-heart-fill"></i></p>
-                            </div>
-                            <div class="col-lg-auto">
-                                <h5 style="text-align: center;">Protection de la femme et de l'enfant</h5>
-                                <p>
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore est 
-                                    consequuntur facilis tenetur alias quidem quis nulla, aliquam dolorem.
-                                </p>
-                                <a href="#">En savoir plus</a>
+                    <div class="col-md-6 col-lg-4 p-1 mb-3">
+                        <div class="row m-3">
+                            <div class="pbox">
+                                <div class="icon d-flex justify-content-start">
+                                    <p><i class="bi bi-people-fill"></i></p>
+                                </div>
+                                <div class="col-lg-auto">
+                                    <h5 style="text-align: center;">Bonne gouvernance</h5>
+                                    <p>
+                                        Le Réseau FORSPAX à travers son Organisation TORCHE PARLEMENTAIRE 
+                                        POUR LA BONNE GOUVERNANCE (TPG-ONG)  à participé à plusieurs 
+                                        activités de promotion de la bonne gouvernance et de sensibilisation 
+                                        des jeunes sur la lutte contre la corruption, la fraude et le 
+                                        blanchement des capitaux
+                                    </p>
+                                    <a href="Domaines d'intervention/bgouvernance.html">En savoir plus</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 p-1 mb-3 shadow bg-light">
-                        <div class="row align-items-center m-3">
-                            <div class="text-center">
-                                <p style="font-size: 60px;"><i class="bi bi-tree-fill"></i></p>
-                            </div>
-                            <div class="col-lg-auto">
-                                <h5 style="text-align: center;">Les activités agro-pastorales</h5>
-                                <p>
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore est 
-                                    consequuntur facilis tenetur alias quidem quis nulla, aliquam dolorem.
-                                </p>
-                                <a href="#">En savoir plus</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 p-1 mb-3 shadow bg-light">
-                        <div class="row align-items-center m-3">
-                            <div class="text-center">
-                                <p style="font-size: 60px;"><i class="bi bi-book"></i></p>
-                            </div>
-                            <div class="col-lg-auto">
-                                <h5 style="text-align: center;">Education</h5>
-                                <p>
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore est 
-                                    consequuntur facilis tenetur alias quidem quis nulla, aliquam dolorem.
-                                </p>
-                                <a href="#">En savoir plus</a>
+                    <div class="col-md-6 col-lg-4 p-1 mb-3">
+                        <div class="row m-3">
+                            <div class="pbox">
+                                <div class="icon d-flex justify-content-start">
+                                    <p><i class="bi bi-heart-fill"></i></p>
+                                </div>
+                                <div class="col-lg-auto">
+                                    <h5 style="text-align: center;">Protection de la femme et de l'enfant</h5>
+                                    <p>
+                                        Face à des problèmes sociaux et questions des droits humains, sur tout 
+                                        les violences sexuelles faites aux femmes et aux enfants: 4 ONG locales 
+                                        et 6 organisations s'étaient mises ensembles en 2008 pour faire face au 
+                                        phénomène femmes victimes des violences sexuelles et enfants non 
+                                        accompagnés
+                                    </p>
+                                    <a href="Domaines d'intervention/protection.html">En savoir plus</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 p-1 mb-3 shadow bg-light">
-                        <div class="row align-items-center m-3">
-                            <div class="text-center">
-                                <p style="font-size: 60px;"><i class="bi bi-house-heart"></i></p>
-                            </div>
-                            <div class="col-lg-auto">
-                                <h5 style="text-align: center;">Services sociaux de base</h5>
-                                <p>
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore est 
-                                    consequuntur facilis tenetur alias quidem quis nulla, aliquam dolorem.
-                                </p>
-                                <a href="#">En savoir plus</a>  
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 p-1 mb-3 shadow bg-light">
-                        <div class="row align-items-center m-3">
-                            <div class="text-center">
-                                <p style="font-size: 60px;"><i class="bi bi-star"></i></p>
-                            </div>
-                            <div class="col-lg-auto">
-                                <h5 style="text-align: center;">Offres diverses</h5> 
-                                <p>
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore est 
-                                    consequuntur facilis tenetur alias quidem quis nulla, aliquam dolorem.
-                                </p>
-                                <a href="#">En savoir plus</a>
+                    <div class="col-md-6 col-lg-4 p-1 mb-3">
+                        <div class="row m-3">
+                            <div class="pbox">
+                                <div class="icon d-flex justify-content-start">
+                                    <p><i class="bi bi-tree-fill"></i></p>
+                                </div>
+                                <div class="col-lg-auto">
+                                    <h5 style="text-align: center;">Les activités agro-pastorales</h5>
+                                    <p>
+                                        Le staff dirigeant du Réseau FORSPAX a déjà travaillé dans plusieurs 
+                                        projets de reboisement à travers les plantations de palmerais dans les 
+                                        localités de Masuika, Salushimba , Mubinza et Moma dans le territoire 
+                                        de Luiza. Nous accompagnons les ménages paysans et les coopératives, 
+                                        et renforçons leurs capacités 
+                                    </p>
+                                    <a href="Domaines d'intervention/agro.html">En savoir plus</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 p-1 mb-3 shadow bg-light">
-                        <div class="row align-items-center m-3">
-                            <div class="text-center">
-                                <p style="font-size: 60px;"><i class="bi bi-chat-dots"></i></p>
+                    <div class="col-md-6 col-lg-4 p-1 mb-3">
+                        <div class="row m-3">
+                            <div class="pbox">
+                                <div class="icon d-flex justify-content-start">
+                                    <p><i class="bi bi-book"></i></p>
+                                </div>
+                                <div class="col-lg-auto">
+                                    <h5 style="text-align: center;">Education</h5>
+                                    <p>
+                                        Améliorer l'environnement éducatif ainsi que la qualité de l'enseignement 
+                                        dans des écoles primaires des provinces éducationnelles se trouvant dans 
+                                        les provinces du Kongo central, de Kwango, de Kwilu, du Kasaï, du Kasaï 
+                                        central, du Kasaï Oriental, de Lualaba, et Lomami…
+                                    </p>
+                                    <a href="Domaines d'intervention/education.html">En savoir plus</a>
+                                </div>
                             </div>
-                            <div class="col-lg-auto">
-                                <h5 style="text-align: center;">Plaidoyer auprès de nos dirigeants</h5> 
-                                <p>
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore est 
-                                    consequuntur facilis tenetur alias quidem quis nulla, aliquam dolorem.
-                                </p>
-                                <a href="#">En savoir plus</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 p-1 mb-3">
+                        <div class="row m-3">
+                            <div class="pbox">
+                                <div class="icon d-flex justify-content-start">
+                                    <p><i class="bi bi-house-heart"></i></p>
+                                </div>
+                                <div class="col-lg-auto">
+                                    <h5 style="text-align: center;">Services sociaux de base</h5>
+                                    <p>
+                                        Face aux problèmes sociaux, des questions des droits humains, 
+                                        et des femmes et des enfants à faible accès aux services 
+                                        sociaux de base: 4 ONG locales et 6 organisations à assises 
+                                        communautaires s'étaient mises ensembles en 2008 pour faire 
+                                        face au phénomène violences sexuelles.
+                                    </p>
+                                    <a href="Domaines d'intervention/sociauxservices.html">En savoir plus</a>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 p-1 mb-3">
+                        <div class="row m-3">
+                            <div class="pbox">
+                                <div class="icon d-flex justify-content-start">
+                                    <p><i class="bi bi-star"></i></p>
+                                </div>
+                                <div class="col-lg-auto">
+                                    <h5 style="text-align: center;">Santé publique</h5> 
+                                    <p>
+                                        Une attente entre Health Focus et le Réseau FORSPAX avec 
+                                        l'appui du Fonds multi-donateurs de soutien programmatique 
+                                        mondial aux activités de la Banque Mondiale : Renforcement 
+                                        des mécanismes de sensibilisation et de prévention du 
+                                        COVID-19 dans certaines mines de la RDC.
+                                    </p>
+                                    <a href="Domaines d'intervention/sante.html">En savoir plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 p-1 mb-3">
+                        <div class="row m-3">
+                            <div class="pbox">
+                                <div class="icon d-flex justify-content-start">
+                                    <p><i class="bi bi-chat-dots"></i></p>
+                                </div>
+                                <div class="col-lg-auto">
+                                    <h5 style="text-align: center;">Environnement</h5> 
+                                    <p>
+                                        Le Réseau FORSPAX soutient les efforts de la RDC qui s'est 
+                                        engagée dans le processus de réduction des émissions dues à la 
+                                        déforestation et à la Dégradation des Forêts (REDD+) depuis 2009. 
+                                    </p>
+                                    <a href="Domaines d'intervention/Environnement.html">En savoir plus</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -199,84 +366,95 @@
             <div class="content">
                 <h1>Nos réalisations</h1>
                 <div class="row">
-                    <div class="col-md-6 col-lg-4 p-1 mb-3 shadow bg-light">
+                    <div class="col-md-6 col-lg-4 p-1 mb-3">
                         <div class="row align-items-center m-3">
-                            <div class="col-lg-auto">
+                            <div class="rbox">
+                                <img src="asset/images/Back1.jpg" alt="" width="100%">
                                 <h5 style="text-align: center;">Bonne gouvernance</h5>
                                 <p>
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore est 
-                                    consequuntur facilis tenetur alias quidem quis nulla, aliquam dolorem.
+                                    Un Contrat de prestation de services entre Health Focus Gmbh (HF) et le 
+                                    Réseau FORSPAX avec l'appui du Fonds multi-donateurs de soutien 
+                                    programmatique mondial aux activités extractives de la Banque Mondiale : 
+                                    Renforcement des mécanismes locaux de sensibilisation et de prévention 
+                                    du COVID-19 dans certaines mines artisanales de la RDC.
                                 </p>
-                                <a href="#">Avoir</a>
+                                <button id="avisbtn">Laisser un avis</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 p-1 mb-3 shadow bg-light">
+                    <div class="col-md-6 col-lg-4 p-1 mb-3">
                         <div class="row align-items-center m-3">
-                            <div class="col-lg-auto">
+                            <div class="rbox">
+                                <img src="asset/images/Back1.jpg" alt="" width="100%">
                                 <h5 style="text-align: center;">Protection de la femme et de l'enfant</h5>
                                 <p>
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore est 
-                                    consequuntur facilis tenetur alias quidem quis nulla, aliquam dolorem.
+                                    Auteur de la proposition d'Edit portant interdiction de l'exploitation et 
+                                    de l'embauchage des enfants dans les carrières minières au Kasaï occidental, 
+                                    Edit qui avait bénéficié de soutiens de la part des églises, des leaders 
+                                    d'opinion et des élus du peuples, loi votée en 2015 par l'Assemblée 
+                                    provinciale et promulguée par le Gouverneur de province.
                                 </p>
-                                <a href="#">Avoir</a>
+                                <button id="avisbtn1">Laisser un avis</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 p-1 mb-3 shadow bg-light">
+                    <div class="col-md-6 col-lg-4 p-1 mb-3">
                         <div class="row align-items-center m-3">
-                            <div class="col-lg-auto">
+                            <div class="rbox">
+                                <img src="asset/images/Back1.jpg" alt="" width="100%">
                                 <h5 style="text-align: center;">Renforcement des capacités</h5>
                                 <p>
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore est 
-                                    consequuntur facilis tenetur alias quidem quis nulla, aliquam dolorem.
+                                    La missionRéseau FORSPAX est de contribuer à l'amélioration  du Social, 
+                                    à la promotion de la paix  et  à la protection des droits humains par 
+                                    les actions de renforcement des capacités techniques et institutionnelles 
+                                    des ASBL et des communautés locales, par la promotion des capacités de 
+                                    résilience communautaire, et des pratiques   de  bonne  gouvernance,
                                 </p>
-                                <a href="#">Voir</a>
+                                <button id="avisbtn2">Laisser un avis</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 p-1 mb-3 shadow bg-light">
+                    <div class="col-md-6 col-lg-4 p-1 mb-3">
                         <div class="row align-items-center m-3">
-                            <div class="col-lg-auto">
+                            <div class="rbox">
+                                <img src="asset/images/Back1.jpg" alt="" width="100%">
                                 <h5 style="text-align: center;">Education</h5>
                                 <p>
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore est 
-                                    consequuntur facilis tenetur alias quidem quis nulla, aliquam dolorem.
+                                    En 2014: Deux questionnaires d'enquêtes élaborées, plus de 3.611 Filles et
+                                    6.717 garçons scolarisables ont été identifiés dans les mines d'or et de diamant,
+                                    513 filles et 706 garçons d'entre eux réinsérés dans des écoles de proximité dans
+                                    la ville de Tshikapa et territoires de Kamonia, Luiza, Luebo, Demba, Dimbelenge et
+                                    Kazumba;
                                 </p>
-                                <a href="#">Voir</a>
+                                <button id="avisbtn3">Laisser un avis</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 p-1 mb-3 shadow bg-light">
+                    <div class="col-md-6 col-lg-4 p-1 mb-3">
                         <div class="row align-items-center m-3">
-                            <div class="col-lg-auto">
+                            <div class="rbox">
+                                <img src="asset/images/Back1.jpg" alt="" width="100%">
                                 <h5 style="text-align: center;">Etudes/Enquêtes</h5>
                                 <p>
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore est 
-                                    consequuntur facilis tenetur alias quidem quis nulla, aliquam dolorem.
+                                    En 2014: 967 autorités traditionnelles, politiques, administratives, 
+                                    parlementaires, policières, militaires, religieuses et les leaders des 
+                                    associations (parmi eux 691 hommes et 276 femmes autorités et leaders,) 
+                                    mobilisés pour obtenir leur engagement dans la protection  et l'éducation 
+                                    des enfants exploités dans les carrières minières.
                                 </p>
-                                <a href="#">Voir</a>  
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 p-1 mb-3 shadow bg-light">
-                        <div class="row align-items-center m-3">
-                            <div clss="col-lg-auto">
-                                <h5 style="text-align: center;">Archives</h5> 
-                                <p>
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore est 
-                                    consequuntur facilis tenetur alias quidem quis nulla, aliquam dolorem.
-                                </p>
-                                <a href="#">Voir</a>
+                                <button id="avisbtn4">Laisser un avis</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="illustre">
+                <img src="asset/images/ECO +.gif" alt="" width="100%">
+            </div>
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="container">
             <div class="content">
                 <div class="row">
@@ -370,6 +548,57 @@
         document.getElementById('burger-menu').addEventListener('click', function() {
             document.getElementById('nav-links').classList.toggle('active');
         });
+
+        // Formulaire des avis
+        document.addEventListener('DOMContentLoaded', () => {
+            const avis = document.getElementById('avis');
+            const avisbtn = document.getElementById('avisbtn');
+            const avisbtn1 = document.getElementById('avisbtn1');
+            const avisbtn2 = document.getElementById('avisbtn2');
+            const avisbtn3 = document.getElementById('avisbtn3');
+            const avisbtn4 = document.getElementById('avisbtn4');
+            const btnclose = document.getElementById('closeavis');
+
+            if (avisbtn) {
+                avisbtn.addEventListener('click', () => {
+                    if (avis) {
+                        avis.style.display = 'block';
+                    }
+                })
+            }
+            if (avisbtn1) {
+                avisbtn1.addEventListener('click', () => {
+                    if (avis) {
+                        avis.style.display = 'block';
+                    }
+                })
+            }
+            if (avisbtn2) {
+                avisbtn2.addEventListener('click', () => {
+                    if (avis) {
+                        avis.style.display = 'block';
+                    }
+                })
+            }
+            if (avisbtn3) {
+                avisbtn3.addEventListener('click', () => {
+                    if (avis) {
+                        avis.style.display = 'block';
+                    }
+                })
+            }
+            if (avisbtn4) {
+                avisbtn4.addEventListener('click', () => {
+                    if (avis) {
+                        avis.style.display = 'block';
+                    }
+                })
+            }
+
+            btnclose.addEventListener('click', () => {
+                avis.style.display = 'none';
+            })
+        })
     </script>
 </body>
 </html>

@@ -1,0 +1,58 @@
+.textimg{
+    background-color: #7d99004d;
+}
+.textimg .container{
+    padding: 40px 0;
+}
+
+.textimg .container .imgcontent{
+    padding: 0 50px;
+}
+
+.textimg .container .imgcontent img{
+    border: 5px solid #7d9900;
+}
+
+.textimg .container .text{
+    padding: 30px;
+}
+
+.textimg .container .text p{
+    color: #000;
+}
+
+.textonly{
+    background-image: url(../asset/images/BG2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-color: #7d9900f1;
+}
+
+.textonly .container{
+   padding: 40px 0; 
+   color: #fff;
+   text-align: center;
+}
+
+.textonly .container p{
+    margin: 10px;
+}
+
+.texticon{
+    background-color: #7d99001c;
+}
+
+.texticon .container{
+    padding: 40px 0;
+}
+
+.texticon .container p{
+    color: #000;
+    margin: 10px;
+}
+
+.texticon .container p strong{
+    color: #7d9900;
+}
