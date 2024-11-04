@@ -11,8 +11,7 @@ body{
     background-repeat: no-repeat;
     background-blend-mode: multiply;
     background-color: #00000096;
-    height: 60vh;
-    padding: 40px 0;
+    padding: 40px;
 }
 
 /* Style pour la barre de navigation */
@@ -260,4 +259,82 @@ footer .container .foot p i{
 
 footer .container .text{
     text-align: center;
+}
+
+@media (max-width: 991px) {
+    .accueil{
+        padding: 10px;
+    }
+
+    .burger-menu {
+      display: flex;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #7d9900;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .nav-links li {
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    .accueil .container .navbar .logo img{
+        width: 60px;
+    }
+
+    .accueil .container .navbar .btn{
+        font-size: 10px;
+    }
+
+    .accueil .container .apercu{
+        margin: 50px;
+    }
+
+    .accueil .container .apercu h1{
+        font-size: 50px;
+    }
+
+    .accueil .container .apercu .textcontent{
+        padding: 20px;
+    }
+    
+    .accueil .container .apercu div p{
+        font-size: 25px;
+        color: #fff;
+    }
+
+    .wrapper .container .content{
+        padding: 10px;
+    }
+
+    .formavis{
+        width: 100%;
+    }
+
+    .avisbox{
+        display: none;
+    }
+
+    footer .container .newsletter img{
+        width: 60px;
+    }
+    
+    footer .container .newsletter input{
+        padding: 3px 8px;
+    }
+
+    footer .container .newsletter button{
+        padding: 3px 10px;
+    }
 }
