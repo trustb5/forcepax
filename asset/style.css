@@ -284,6 +284,28 @@ html{
     border-radius: 10px;
 }
 
+.partenairs .container{
+    padding: 40px 10px;
+}
+
+.partenairs .container h3{
+    text-align: center;
+    color: #000;
+    font-size: 40px;
+}
+
+.partenairs .container .row{
+    display: flex;
+}
+
+.partenairs .container .box{
+    background-color: #7d9900;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #4b4b4b;
+}
+
  /* Style pour le formulaire de contact */
 .contact{
     padding: 40px;
