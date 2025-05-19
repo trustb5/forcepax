@@ -1,8 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BPP1THNC21"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-BPP1THNC21');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="asset/images/Logos/FORspa (1).png" rel="icon">
     <link rel="stylesheet" href="asset/Boostrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="asset/icons-1.10.5/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="asset/style.css">
@@ -164,11 +176,11 @@
                     <a href="index.html" class="logo"><img src="asset/images/Logos/FORspa (1).png" alt="Logo FORSPAX"></a>
                     <ul class="nav-links" id="nav-links">
                         <li><a href="index.html">Accueil</a></li>
-                        <li><a href="#projets">Domaines d'intervention</a></li>
-                        <li><a href="#real">Réalisations</a></li>
-                        <li><a href="About/about.html">A propos</a></li>
+                        <li><a href="index.html#projets">Domaines d'intervention</a></li>
+                        <li><a href="realisations.html">Réalisations</a></li>
+                        <li><a href="./About/about.html">A propos</a></li>
                     </ul>
-                    <a href="#contact" class="btn" id="connection">Contact</a>
+                    <a href="index.html#contact" class="btn" id="connection">Contact</a>
                 </div>
             </header>
             <div class="d-flex justify-content-center">
@@ -184,10 +196,11 @@
             </div>
         </div>
     </section>
+
     <section class="about" id="about">
         <div class="container">
             <div class="content">
-                <h1>Qui sommes nous ?</h1>
+                <h1 style="font-size: 2.5rem; font-weight: bold; margin-top: 3rem;">Qui sommes nous ?</h1>
                 <p style="text-align: left;">
                     le <strong>Réseau FORSPAX</strong> est l'un des  résultats  historiques  de différentes synergies  et consortiums  
                     ayant  travaillé dans les domaines de: promotion de la paix, lutte contre les VBG et le VIH-SIDA, 
@@ -195,7 +208,8 @@
                     réforme législative  par  élaboration des Edits  et  plaidoyer pour  leur vote   et  leur  
                     promulgation  par les autorités gouvernementales.
                 </p>
-                <h1>Vision et Mandat</h1>
+
+                <h1 style="font-size: 2.5rem; font-weight: bold; margin-top: 3rem;">Vision et Mandat</h1>
                 <p style="text-align: left;">
                     La VISION du <strong>Réseau FORSPAX</strong> est  de demeurer  une interface crédible et fédératrice des dynamiques  
                     communautaires  par  lesquelles  la confiance, la citoyenneté responsable, la paix, la prospérité des 
@@ -209,15 +223,16 @@
                     communautaire,  et des pratiques   de  bonne  gouvernance, de  non-violence et de citoyenneté responsable   
                     pour qu'elles  améliorent  les conditions  de vie dans la société congolaise   en  général    et  celles  des 
                     zones enclavées  en particulier.
-                </p>
+                </p> <br>
                 <a href="About/about.html">En savoir plus</a>
             </div>
         </div>
     </section>
+
     <section class="projets" id="projets">
         <div class="container">
             <div class="content">
-                <h1>Nos domaines d'interventions</h1>
+                <h1 class="mt-5">Nos domaines d'interventions</h1>
                 <div class="row">
                     <div class="col-md-6 col-lg-4 p-1 mb-3">
                         <div class="row m-3">
@@ -225,6 +240,7 @@
                                 <div class="icon d-flex justify-content-start">
                                     <p><i class="bi bi-people-fill"></i></p>
                                 </div>
+                                <img src="asset/images/gouv/gouv.png" alt="" style="width: 100%; height: 250px; border-radius: 10px; object-fit: cover; margin-bottom: 10px;">
                                 <div class="col-lg-auto">
                                     <h5 style="text-align: center;">Bonne gouvernance</h5>
                                     <p>
@@ -245,6 +261,7 @@
                                 <div class="icon d-flex justify-content-start">
                                     <p><i class="bi bi-heart-fill"></i></p>
                                 </div>
+                                <img src="asset/images/protection_femme/protection_femme.png" alt="" style="width: 100%; height: 250px; border-radius: 10px; object-fit: cover; margin-bottom: 10px;">
                                 <div class="col-lg-auto">
                                     <h5 style="text-align: center;">Protection de la femme et de l'enfant</h5>
                                     <p>
@@ -265,6 +282,7 @@
                                 <div class="icon d-flex justify-content-start">
                                     <p><i class="bi bi-tree-fill"></i></p>
                                 </div>
+                                <img src="asset/images/agro/agro.png" alt="" style="width: 100%; height: 250px; border-radius: 10px; object-fit: cover; margin-bottom: 10px;">
                                 <div class="col-lg-auto">
                                     <h5 style="text-align: center;">Les activités agro-pastorales</h5>
                                     <p>
@@ -285,6 +303,7 @@
                                 <div class="icon d-flex justify-content-start">
                                     <p><i class="bi bi-book"></i></p>
                                 </div>
+                                <img src="asset/images/education/education.png" alt="" style="width: 100%; height: 250px; border-radius: 10px; object-fit: cover; margin-bottom: 10px;">
                                 <div class="col-lg-auto">
                                     <h5 style="text-align: center;">Education</h5>
                                     <p>
@@ -304,8 +323,9 @@
                                 <div class="icon d-flex justify-content-start">
                                     <p><i class="bi bi-house-heart"></i></p>
                                 </div>
+                                <img src="asset/images/sociaux/sociaux.png" alt="" style="width: 100%; height: 250px; border-radius: 10px; object-fit: cover; margin-bottom: 10px;">
                                 <div class="col-lg-auto">
-                                    <h5 style="text-align: center;">Services sociaux de base</h5>
+                                    <h5 style="text-align: center;">Services sociaux (Infrastructures) de base</h5>
                                     <p>
                                         Face aux problèmes sociaux, des questions des droits humains, 
                                         et des femmes et des enfants à faible accès aux services 
@@ -324,6 +344,7 @@
                                 <div class="icon d-flex justify-content-start">
                                     <p><i class="bi bi-star"></i></p>
                                 </div>
+                                <img src="asset/images/sante/sante.png" alt="" style="width: 100%; height: 250px; border-radius: 10px; object-fit: cover; margin-bottom: 10px;">
                                 <div class="col-lg-auto">
                                     <h5 style="text-align: center;">Santé publique</h5> 
                                     <p>
@@ -344,8 +365,9 @@
                                 <div class="icon d-flex justify-content-start">
                                     <p><i class="bi bi-chat-dots"></i></p>
                                 </div>
+                                <img src="asset/images/env/env.png" alt="" style="width: 100%; height: 250px; border-radius: 10px; object-fit: cover; margin-bottom: 10px;">
                                 <div class="col-lg-auto">
-                                    <h5 style="text-align: center;">Environnement</h5> 
+                                    <h5 style="text-align: center;">Environnement</h5>
                                     <p>
                                         Le Réseau FORSPAX soutient les efforts de la RDC qui s'est 
                                         engagée dans le processus de réduction des émissions dues à la 
@@ -356,20 +378,39 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-6 col-lg-4 p-1 mb-3">
+                        <div class="row m-3">
+                            <div class="pbox">
+                                <div class="icon d-flex justify-content-start">
+                                    <p><i class="bi bi-chat-dots"></i></p>
+                                </div>
+                                <img src="asset/images/paix/paix.png" alt="" style="width: 100%; height: 250px; border-radius: 10px; object-fit: cover; margin-bottom: 10px;">
+                                <div class="col-lg-auto">
+                                    <h5 style="text-align: center;">Promotion et consolidation de la paix</h5>
+                                    <p>
+                                        La paix reste un domaine majeur dans lequel forspax s'implique, favorisant   dialogue, réconciliation, 
+                                        justice transitionnelle, désarmement, développement inclusif et engagement communautaire pour surmonter 
+                                        les conflits persistants et bâtir une société stable.
+                                    </p>
+                                    <a href="#">En savoir plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="real" id="real">
+    <section class="real py-5" id="real">
         <div class="container">
-            <div class="content">
+            <!-- <div class="content">
                 <h1>Nos réalisations</h1>
                 <div class="row">
                     <div class="col-md-6 col-lg-4 p-1 mb-3">
                         <div class="row align-items-center m-3">
                             <div class="rbox">
-                                <img src="asset/images/Back1.jpg" alt="" width="100%">
+                                <img src="asset/images/realisations/bonne-gouvernance.jpg" alt="" width="100%">
                                 <h5 style="text-align: center;">Bonne gouvernance</h5>
                                 <p>
                                     Un Contrat de prestation de services entre Health Focus Gmbh (HF) et le 
@@ -385,7 +426,7 @@
                     <div class="col-md-6 col-lg-4 p-1 mb-3">
                         <div class="row align-items-center m-3">
                             <div class="rbox">
-                                <img src="asset/images/Back1.jpg" alt="" width="100%">
+                                <img src="asset/images/realisations/protection-femme-enfant.jpeg" alt="" width="100%">
                                 <h5 style="text-align: center;">Protection de la femme et de l'enfant</h5>
                                 <p>
                                     Auteur de la proposition d'Edit portant interdiction de l'exploitation et 
@@ -401,7 +442,7 @@
                     <div class="col-md-6 col-lg-4 p-1 mb-3">
                         <div class="row align-items-center m-3">
                             <div class="rbox">
-                                <img src="asset/images/Back1.jpg" alt="" width="100%">
+                                <img src="asset/images/realisations/renforcement-capacite.jpg" alt="" width="100%">
                                 <h5 style="text-align: center;">Renforcement des capacités</h5>
                                 <p>
                                     La missionRéseau FORSPAX est de contribuer à l'amélioration  du Social, 
@@ -417,7 +458,7 @@
                     <div class="col-md-6 col-lg-4 p-1 mb-3">
                         <div class="row align-items-center m-3">
                             <div class="rbox">
-                                <img src="asset/images/Back1.jpg" alt="" width="100%">
+                                <img src="asset/images/realisations/education.jpg" alt="" width="100%">
                                 <h5 style="text-align: center;">Education</h5>
                                 <p>
                                     En 2014: Deux questionnaires d'enquêtes élaborées, plus de 3.611 Filles et
@@ -433,7 +474,7 @@
                     <div class="col-md-6 col-lg-4 p-1 mb-3">
                         <div class="row align-items-center m-3">
                             <div class="rbox">
-                                <img src="asset/images/Back1.jpg" alt="" width="100%">
+                                <img src="asset/images/realisations/enquetes.jpg" alt="" width="100%">
                                 <h5 style="text-align: center;">Etudes/Enquêtes</h5>
                                 <p>
                                     En 2014: 967 autorités traditionnelles, politiques, administratives, 
@@ -447,9 +488,86 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="illustre">
                 <img src="asset/images/Purple and Pink Modern Bold Business Service Promotion Ads Video.gif" alt="" width="100%">
+            </div>
+        </div>
+    </section>
+
+    <section class="partenairs">
+        <div class="container">
+            <h3>Nos Partenaires</h3>
+            <h5>Gouvernement Congolais : </h5>
+            <div class="row ">
+                <div class="col-lg-3 mb-3">
+                    <div class="box">
+                        <img src="asset/images/Partenaires/AGR.PNG" alt="" width="100%">
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-3">
+                    <div class="box">
+                        <img src="asset/images/Partenaires/PLC.png" alt="" width="100%">
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-3">
+                    <div class="box">
+                        <img src="asset/images/Partenaires/ENV.png" alt="" width="100%">
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-3">
+                    <div class="box">
+                        <img src="asset/images/Partenaires/EDU.png" alt="" width="100%">
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-3">
+                    <div class="box">
+                        <img src="asset/images/Partenaires/AFS.png" alt="" width="100%">
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-3">
+                    <div class="box">
+                        <img src="asset/images/Partenaires/DRU.png" alt="" width="100%">
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-3">
+                    <div class="box">
+                        <img src="asset/images/Partenaires/SPU.png" alt="" width="100%">
+                    </div>
+                </div>
+            </div>
+            <h5>Agences des Nations Unies et Organisations Internationales : </h5>
+            <div class="row">
+                <div class="col-lg-3 mb-3">
+                    <div class="box">
+                        <h6>UNICEF à travers le Cluster Éducation et Protection</h6>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-3">
+                    <div class="box">
+                        <h6>FAO et PAM à travaers le CLuster Sécurité alimentaire</h6>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-3">
+                    <div class="box">
+                        <h6>UNFPA à travers le Groupe de travail VBG</h6>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-3">
+                    <div class="box">
+                        <h6>OMS et UNHCR à travers le Cluster santé et sous Cluster Abris</h6>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-3">
+                    <div class="box">
+                        <h6>DFID à travers Christian <br> Aid</h6>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-3">
+                    <div class="box">
+                        <h6>AFD à travers France Expertise international</h6>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -503,14 +621,15 @@
                         <div>
                             <h4>A propos</h4>
                             <p>
-                                le Réseau FORSPAX travaille depuis 2008 <br> 
-                                dans les domaines de: promotion de la <br>
-                                paix, lutte contre les VBG et le VIH-SIDA, <br><br> 
-                                plaidoyer, monitoring, promotion de la <br>
-                                bonne gouvernance, protection des groupes <br>
-                                vulnérables, réforme législative par <br>
-                                élaboration des Edits et  plaidoyer pour <br>
-                                leur vote etcleur promulgation par les <br>
+                                Les organisations créatrices du réseau FORSPAX
+                                avaient commencé à travailler en synergie depuis 2008
+                                dans les domaines de : La promotion de la
+                                paix, la lutte contre les VBG et le VIH-SIDA,
+                                le plaidoyer, le monitoring, la promotion de la
+                                bonne gouvernance, la protection des groupes 
+                                vulnérables, la réforme législative par 
+                                élaboration des Edits et le plaidoyer pour
+                                leur vote et leur promulgation par les
                                 autorités gouvernementales.
                             </p>
                         </div>
@@ -520,10 +639,11 @@
                             <h4>Partainers</h4>
 
                             <li>UNICEF</li>
-                            <li>ONU Femmes</li>
-                            <li>Croix-Rouge</li>
-                            <li>Banque Mondiale</li>
-                            <li>USAID</li>
+                            <li>FAO et PAM</li>
+                            <li>UNFPA</li>
+                            <li>OMS et UNHCR</li>
+                            <li>DFID</li>
+                            <li>AFD</li>
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -532,7 +652,7 @@
                                 <div>
                                     <p><i class="bi bi-telephone-fill"></i> +243 85 48 14 970 - 81 17 89 068 - 89 74 34 505</p>
                                     <p><i class="bi bi-envelope-fill"></i> forspax2012@gmail.com</p>
-                                    <p><i class="bi bi-geo-alt-fill"></i> 22, Av.Congo, Q. Mazemba, C. Mont-Ngafula, Ville de Kinshasa</p>
+                                    <p><i class="bi bi-geo-alt-fill"></i> 22, Av.Congo, Q. Mazamba, C. Mont-Ngafula, Ville de Kinshasa</p>
                                 </div>
                         </div>
                     </div>
